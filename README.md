@@ -1,3 +1,4 @@
 # GitHub Actions Lab 1
 GitHub Actions 
-wsw
+
+![Alt text](image.png)
