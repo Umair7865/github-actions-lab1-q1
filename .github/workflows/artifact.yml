@@ -21,7 +21,8 @@ jobs:
 
   jobs:
       needs: build_job1
-      runs-on: ubuntu-lastest
+      name: build_job2
+      runs-on: ubuntu-latest
 
       steps:
       - name: Download Artifact 
