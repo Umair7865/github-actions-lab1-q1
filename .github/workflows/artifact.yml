@@ -16,7 +16,7 @@ jobs:
     - name: upload text file
       uses: actions/upload-artifact@v4
       with:
-        name: hello-artifact
+        name: hello-artifact    #name of artifact name to download the file within it...
         path: hello.txt
 
 
@@ -31,6 +31,6 @@ jobs:
       - name: Downloading Artifact 
         uses: actions/download-artifact@v4
         with:
-         name: hello-artifact
+         name: hello-artifact       #must mention name of artifact for downloading the file within it.
 
       - run: ls -lah && more hello.txt
