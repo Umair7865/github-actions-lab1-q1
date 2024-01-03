@@ -1,5 +1,5 @@
 # GitHub Actions Lab 1
-GitHub Actions 
+GitHub Actions Marketplace to search Actions for your workflow...
 
 Downloading and Uploading Artifact is in workflow directrory...
 
