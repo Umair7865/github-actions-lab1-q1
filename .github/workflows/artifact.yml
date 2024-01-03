@@ -3,7 +3,7 @@ name: Workflow Demo
 on: [push]
 
 jobs:
-  build:
+  build_job1:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,15 +19,15 @@ jobs:
         name: hello-artifact
         path: hello.txt
 
-jobs:
-  needs: build
-    runs-on: ubuntu-lastest
+  jobs:
+      needs: build_job1
+      runs-on: ubuntu-lastest
 
-    steps:
-    - name: Download Artifact 
-      uses: actions/download-artifact@v4
-      with:
-        name: downloading artifact
+      steps:
+      - name: Download Artifact 
+        uses: actions/download-artifact@v4
+        with:
+         name: downloading artifact
 
-    - name: List
-      run: ls -lah
+      - name: List
+        run: ls -lah
