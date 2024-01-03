@@ -19,9 +19,6 @@ jobs:
         name: hello-artifact    #name of artifact name to download the file within it...
         path: hello.txt
 
-
-
-
   jobs:
       needs: build_job1
       name: build_job2
