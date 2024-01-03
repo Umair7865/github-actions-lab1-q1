@@ -31,6 +31,6 @@ jobs:
       - name: Downloading Artifact 
         uses: actions/download-artifact@v4
         with:
-         name: downloading artifact
+         name: hello-artifact
 
       - run: ls -lah && more hello.txt
