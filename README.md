@@ -11,3 +11,6 @@ Downloading and Uploading Artifact is in workflow directrory...
 
 # Workflow Level Environment Variable:
 ![Alt text](image-2.png)
+2 ways to call variable: 
+1st => $CONTAINER_REGISTERY
+2nd => ${( env.CONTAINER_REGISTERY )}
